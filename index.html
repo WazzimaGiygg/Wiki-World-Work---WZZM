@@ -358,7 +358,7 @@ onAuthStateChanged(auth, (user) => {
 // -------------------------------------------------------------
 async function loadDynamicLinks(userId) {
     try {
-        const SITE_ID = "wazzimagiygg"; // Defina o ID do site
+        const SITE_ID = "www"; // Defina o ID do site
         const KEY_DOCUMENT_ID = `${SITE_ID}_menu_list`; // Ex: 'wazzimagiygg_menu_list'
         const docRef = doc(db, "keymenulista", KEY_DOCUMENT_ID);
         const docSnap = await getDoc(docRef);
@@ -387,8 +387,8 @@ async function loadDynamicLinks(userId) {
         const staticStartLinks = [
             { name: 'Termos de Serviço', url: 'https://wazzimagiygg.com/Termos%20de%20Servi%C3%A7o.pdf', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' },
             { name: 'Política de Privacidade', url: 'https://wazzimagiygg.com/Pol%C3%ADtica%20de%20Privacidade.pdf', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' },
-            { name: 'Fale com a Administração', url: 'https://wazzimagiygg.com/html/?uid=a13IwrEoc1Jmdi2I3Hve', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' }, //ciphersafe.wazzimagiygg.com
-            //{ name: 'quill-sync', url: 'https://quill-sync.wazzimagiygg.com/', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' },//https://quill-sync.wazzimagiygg.com/
+            { name: 'Fale com a Administração', url: 'https://wazzimagiygg.com/html/?uid=a13IwrEoc1Jmdi2I3Hve', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' },
+            //{ name: 'Fale com a Administração', url: 'https://wazzimagiygg.com/', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' },
             { name: 'Logoff (Sair)', action: 'logout', iconUrl: 'iconmagic.png', menu_target: 'menu_iniciar' }
 
         ];
